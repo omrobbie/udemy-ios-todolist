@@ -15,6 +15,11 @@ class GDGradient : UIView {
         UIColor.init(red: 58, green: 123, blue: 213).cgColor
     ]
     
+    var hexColors:[CGColor] = [
+        UIColor.init(hex: 0x64E4FF).cgColor,
+        UIColor.init(hex: 0x3A7BD5).cgColor
+    ]
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
