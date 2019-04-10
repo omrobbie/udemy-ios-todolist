@@ -14,6 +14,7 @@
 		FC55FB6D225E8ACE00D0297D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC55FB6B225E8ACE00D0297D /* LaunchScreen.storyboard */; };
 		FC55FB75225E9F1C00D0297D /* GDGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC55FB74225E9F1C00D0297D /* GDGradient.swift */; };
 		FC55FB78225EA3BE00D0297D /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC55FB77225EA3BE00D0297D /* extension.swift */; };
+		FC55FB7B225EACCC00D0297D /* GDLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC55FB7A225EACCC00D0297D /* GDLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		FC55FB6E225E8ACE00D0297D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC55FB74225E9F1C00D0297D /* GDGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDGradient.swift; sourceTree = "<group>"; };
 		FC55FB77225EA3BE00D0297D /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		FC55FB7A225EACCC00D0297D /* GDLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		FC55FB5E225E8ACD00D0297D /* GetItDone */ = {
 			isa = PBXGroup;
 			children = (
+				FC55FB79225EACAE00D0297D /* controls */,
 				FC55FB76225EA3A100D0297D /* extension */,
 				FC55FB5F225E8ACD00D0297D /* AppDelegate.swift */,
 				FC55FB61225E8ACD00D0297D /* WelcomeController.swift */,
@@ -65,7 +68,6 @@
 				FC55FB6B225E8ACE00D0297D /* LaunchScreen.storyboard */,
 				FC55FB6E225E8ACE00D0297D /* Info.plist */,
 				FC55FB66225E8ACD00D0297D /* GetItDone.xcdatamodeld */,
-				FC55FB74225E9F1C00D0297D /* GDGradient.swift */,
 			);
 			path = GetItDone;
 			sourceTree = "<group>";
@@ -76,6 +78,15 @@
 				FC55FB77225EA3BE00D0297D /* extension.swift */,
 			);
 			path = extension;
+			sourceTree = "<group>";
+		};
+		FC55FB79225EACAE00D0297D /* controls */ = {
+			isa = PBXGroup;
+			children = (
+				FC55FB74225E9F1C00D0297D /* GDGradient.swift */,
+				FC55FB7A225EACCC00D0297D /* GDLabel.swift */,
+			);
+			path = controls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +162,7 @@
 				FC55FB75225E9F1C00D0297D /* GDGradient.swift in Sources */,
 				FC55FB62225E8ACD00D0297D /* WelcomeController.swift in Sources */,
 				FC55FB68225E8ACD00D0297D /* GetItDone.xcdatamodeld in Sources */,
+				FC55FB7B225EACCC00D0297D /* GDLabel.swift in Sources */,
 				FC55FB78225EA3BE00D0297D /* extension.swift in Sources */,
 				FC55FB60225E8ACD00D0297D /* AppDelegate.swift in Sources */,
 			);

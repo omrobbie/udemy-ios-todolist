@@ -10,7 +10,7 @@ import UIKit
 
 class WelcomeController: UIViewController {
     
-    let bg : UIView = {
+    let bg:UIView = {
         let view = GDGradient()
         view.layer.cornerRadius = 6
         
