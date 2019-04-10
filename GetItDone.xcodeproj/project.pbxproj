@@ -13,6 +13,7 @@
 		FC55FB6A225E8ACE00D0297D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC55FB69225E8ACE00D0297D /* Assets.xcassets */; };
 		FC55FB6D225E8ACE00D0297D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC55FB6B225E8ACE00D0297D /* LaunchScreen.storyboard */; };
 		FC55FB75225E9F1C00D0297D /* GDGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC55FB74225E9F1C00D0297D /* GDGradient.swift */; };
+		FC55FB78225EA3BE00D0297D /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC55FB77225EA3BE00D0297D /* extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FC55FB6C225E8ACE00D0297D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC55FB6E225E8ACE00D0297D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC55FB74225E9F1C00D0297D /* GDGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDGradient.swift; sourceTree = "<group>"; };
+		FC55FB77225EA3BE00D0297D /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		FC55FB5E225E8ACD00D0297D /* GetItDone */ = {
 			isa = PBXGroup;
 			children = (
+				FC55FB76225EA3A100D0297D /* extension */,
 				FC55FB5F225E8ACD00D0297D /* AppDelegate.swift */,
 				FC55FB61225E8ACD00D0297D /* WelcomeController.swift */,
 				FC55FB69225E8ACE00D0297D /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				FC55FB74225E9F1C00D0297D /* GDGradient.swift */,
 			);
 			path = GetItDone;
+			sourceTree = "<group>";
+		};
+		FC55FB76225EA3A100D0297D /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				FC55FB77225EA3BE00D0297D /* extension.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +151,7 @@
 				FC55FB75225E9F1C00D0297D /* GDGradient.swift in Sources */,
 				FC55FB62225E8ACD00D0297D /* WelcomeController.swift in Sources */,
 				FC55FB68225E8ACD00D0297D /* GetItDone.xcdatamodeld in Sources */,
+				FC55FB78225EA3BE00D0297D /* extension.swift in Sources */,
 				FC55FB60225E8ACD00D0297D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
