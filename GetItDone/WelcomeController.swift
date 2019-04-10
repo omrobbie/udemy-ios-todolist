@@ -8,11 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class WelcomeController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         print(#function)
+        
+        view.backgroundColor = .yellow
     }
 }
