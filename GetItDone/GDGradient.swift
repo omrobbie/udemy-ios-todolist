@@ -10,14 +10,14 @@ import UIKit
 
 class GDGradient : UIView {
     
-    var colors:[CGColor] = [
-        UIColor.init(red: 100, green: 228, blue: 255).cgColor,
-        UIColor.init(red: 58, green: 123, blue: 213).cgColor
-    ]
+//    var colors:[CGColor] = [
+//        UIColor.init(red: 100, green: 228, blue: 255).cgColor,
+//        UIColor.init(red: 58, green: 123, blue: 213).cgColor
+//    ]
     
     var hexColors:[CGColor] = [
-        UIColor.init(hex: 0x64E4FF).cgColor,
-        UIColor.init(hex: 0x3A7BD5).cgColor
+        UIColor.blueZero.cgColor,
+        UIColor.blueOne.cgColor
     ]
     
     required init?(coder aDecoder: NSCoder) {
@@ -30,7 +30,7 @@ class GDGradient : UIView {
         self.translatesAutoresizingMaskIntoConstraints = false
         
         if let layer = self.layer as? CAGradientLayer {
-            layer.colors = self.colors
+            layer.colors = self.hexColors
             layer.locations = [0.0, 1.2]
         }
     }
