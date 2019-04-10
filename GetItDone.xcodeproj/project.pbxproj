@@ -12,6 +12,7 @@
 		FC55FB68225E8ACD00D0297D /* GetItDone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC55FB66225E8ACD00D0297D /* GetItDone.xcdatamodeld */; };
 		FC55FB6A225E8ACE00D0297D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC55FB69225E8ACE00D0297D /* Assets.xcassets */; };
 		FC55FB6D225E8ACE00D0297D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC55FB6B225E8ACE00D0297D /* LaunchScreen.storyboard */; };
+		FC55FB75225E9F1C00D0297D /* GDGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC55FB74225E9F1C00D0297D /* GDGradient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FC55FB69225E8ACE00D0297D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC55FB6C225E8ACE00D0297D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC55FB6E225E8ACE00D0297D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC55FB74225E9F1C00D0297D /* GDGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDGradient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				FC55FB6B225E8ACE00D0297D /* LaunchScreen.storyboard */,
 				FC55FB6E225E8ACE00D0297D /* Info.plist */,
 				FC55FB66225E8ACD00D0297D /* GetItDone.xcdatamodeld */,
+				FC55FB74225E9F1C00D0297D /* GDGradient.swift */,
 			);
 			path = GetItDone;
 			sourceTree = "<group>";
@@ -134,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC55FB75225E9F1C00D0297D /* GDGradient.swift in Sources */,
 				FC55FB62225E8ACD00D0297D /* WelcomeController.swift in Sources */,
 				FC55FB68225E8ACD00D0297D /* GetItDone.xcdatamodeld in Sources */,
 				FC55FB60225E8ACD00D0297D /* AppDelegate.swift in Sources */,
