@@ -26,17 +26,9 @@ class WelcomeController: UIViewController {
         return label
     }()
     
-    let nextButton:UIButton = {
-        let button = UIButton()
-        button.backgroundColor = .white
-        button.setTitle("START WINNING", for: .normal)
-        button.setTitleColor(.black, for: .normal)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        
-        return button
-    }()
+    let nextButton = GDButton(title: "START WINNING")
     
-    let copyright = GDLabel(title: "© 2019 | omrobbie.com", color: .grayZero, size: 14, textAlignment: .center)
+    let copyright = GDLabel(title: "© 2019 | omrobbie.com", color: .grayOne, size: 14, textAlignment: .center)
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GDGradient : UIView {
+class GDGradient: UIView {
     
 //    var colors:[CGColor] = [
 //        UIColor.init(red: 100, green: 228, blue: 255).cgColor,
