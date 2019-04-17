@@ -13,6 +13,8 @@ extension UIColor {
     static var blueZero: UIColor {return UIColor.init(hex: 0x64E4FF)}
     static var blueOne: UIColor {return UIColor.init(hex: 0x3A7BD5)}
     
+    static var grayZero: UIColor {return UIColor.init(hex: 0x9b9b9b)}
+    
     convenience init(red: Int, green: Int, blue: Int) {
         self.init(
             red: CGFloat(red)/255.0,
