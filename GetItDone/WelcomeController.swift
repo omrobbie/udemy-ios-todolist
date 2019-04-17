@@ -12,7 +12,7 @@ class WelcomeController: UIViewController {
     
     let bg:UIView = {
         let view = GDGradient()
-        view.layer.cornerRadius = 6
+        view.layer.cornerRadius = 24
         
         return view
     }()

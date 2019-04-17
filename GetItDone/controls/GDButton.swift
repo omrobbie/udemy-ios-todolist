@@ -30,7 +30,7 @@ class GDButton: UIButton {
     func phaseTwo() {
         self.setTitle(self.title, for: .normal)
         self.setTitleColor(.grayZero , for: .normal)
-        self.layer.cornerRadius = 16
+        self.layer.cornerRadius = 20
         self.backgroundColor = .white
 
         if let titleLabel = self.titleLabel {
