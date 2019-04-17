@@ -28,6 +28,8 @@
 		FC55FB74225E9F1C00D0297D /* GDGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDGradient.swift; sourceTree = "<group>"; };
 		FC55FB77225EA3BE00D0297D /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 		FC55FB7A225EACCC00D0297D /* GDLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDLabel.swift; sourceTree = "<group>"; };
+		FC55FB7E225EB0BF00D0297D /* Raleway-v4020-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-v4020-Regular.otf"; sourceTree = "<group>"; };
+		FC55FB7F225EB1F500D0297D /* Raleway-v4020-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-v4020-SemiBold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +62,9 @@
 		FC55FB5E225E8ACD00D0297D /* GetItDone */ = {
 			isa = PBXGroup;
 			children = (
-				FC55FB79225EACAE00D0297D /* controls */,
 				FC55FB76225EA3A100D0297D /* extension */,
+				FC55FB79225EACAE00D0297D /* controls */,
+				FC55FB7C225EB06D00D0297D /* fonts */,
 				FC55FB5F225E8ACD00D0297D /* AppDelegate.swift */,
 				FC55FB61225E8ACD00D0297D /* WelcomeController.swift */,
 				FC55FB69225E8ACE00D0297D /* Assets.xcassets */,
@@ -87,6 +90,15 @@
 				FC55FB7A225EACCC00D0297D /* GDLabel.swift */,
 			);
 			path = controls;
+			sourceTree = "<group>";
+		};
+		FC55FB7C225EB06D00D0297D /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FC55FB7E225EB0BF00D0297D /* Raleway-v4020-Regular.otf */,
+				FC55FB7F225EB1F500D0297D /* Raleway-v4020-SemiBold.otf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -14,7 +14,7 @@ class GDLabel : UILabel {
         fatalError("init(coder:) has not been implemented")
     }
     
-    init(title: String = "GDLabel", color: UIColor = .white, size: CGFloat = 16, frame: CGRect = .zero) {
+    init(title: String = "GDLabel", color: UIColor = .white, size: CGFloat = 16, textAlignment: NSTextAlignment = .left, frame: CGRect = .zero) {
         super.init(frame: frame)
         
         if frame == .zero {
@@ -23,6 +23,7 @@ class GDLabel : UILabel {
         
         self.text = title
         self.textColor = color
-        self.font = UIFont.systemFont(ofSize: size)
+        self.font = UIFont.init(name: "Raleway-v4020-Regular", size: size)
+        self.textAlignment = textAlignment
     }
 }
