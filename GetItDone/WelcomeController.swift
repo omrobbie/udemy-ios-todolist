@@ -26,6 +26,16 @@ class WelcomeController: UIViewController {
         return label
     }()
     
+    let nextButton:UIButton = {
+        let button = UIButton()
+        button.backgroundColor = .white
+        button.setTitle("START WINNING", for: .normal)
+        button.setTitleColor(.black, for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        
+        return button
+    }()
+    
     let copyright = GDLabel(title: "© 2019 | omrobbie.com", color: .grayZero, size: 14, textAlignment: .center)
     
     override func viewDidLoad() {
@@ -51,6 +61,12 @@ class WelcomeController: UIViewController {
         infoLabel.widthAnchor.constraint(equalToConstant: 350).isActive = true
         infoLabel.heightAnchor.constraint(equalToConstant: 80).isActive = true
         
+        bg.addSubview(nextButton)
+        nextButton.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        nextButton.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        nextButton.centerXAnchor.constraint(equalTo: bg.centerXAnchor).isActive = true
+        nextButton.bottomAnchor.constraint(equalTo: bg.bottomAnchor, constant: -60).isActive = true
+
         bg.addSubview(copyright)
         copyright.widthAnchor.constraint(equalToConstant: 200).isActive = true
         copyright.heightAnchor.constraint(equalToConstant: 40).isActive = true
