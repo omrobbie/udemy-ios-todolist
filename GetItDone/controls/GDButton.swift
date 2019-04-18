@@ -9,24 +9,24 @@
 import UIKit
 
 class GDButton: UIButton {
-    
+
     var title: String!
-    
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 
     init(title: String = "Title", frame: CGRect = .zero) {
         super.init(frame: frame)
-        
+
         if frame == .zero {
             self.translatesAutoresizingMaskIntoConstraints = false
         }
-        
+
         self.title = title
         self.phaseTwo()
     }
-    
+
     func phaseTwo() {
         self.setTitle(self.title, for: .normal)
         self.setTitleColor(.grayZero , for: .normal)

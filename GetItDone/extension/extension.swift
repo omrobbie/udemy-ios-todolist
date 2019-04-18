@@ -9,10 +9,10 @@
 import UIKit
 
 extension UIColor {
-    
+
     static var blueZero: UIColor {return UIColor.init(hex: 0x64E4FF)}
     static var blueOne: UIColor {return UIColor.init(hex: 0x3A7BD5)}
-    
+
     static var grayZero: UIColor {return UIColor.init(hex: 0x9b9b9b)}
     static var grayOne: UIColor {return UIColor.init(hex: 0x424242)}
 
@@ -24,7 +24,7 @@ extension UIColor {
             alpha: 1.0
         )
     }
-    
+
     convenience init(hex: Int) {
         self.init(
             red: (hex >> 16) & 0xFF,
