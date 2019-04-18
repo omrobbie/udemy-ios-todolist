@@ -10,6 +10,7 @@
 		FC4250272266C24500A4A502 /* GDButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4250262266C24500A4A502 /* GDButton.swift */; };
 		FC42502E2268D5AC00A4A502 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC42502D2268D5AC00A4A502 /* ListViewController.swift */; };
 		FC4250302268E07700A4A502 /* GDHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC42502F2268E07700A4A502 /* GDHeaderView.swift */; };
+		FC4250342269359600A4A502 /* optionset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4250332269359600A4A502 /* optionset.swift */; };
 		FC55FB60225E8ACD00D0297D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC55FB5F225E8ACD00D0297D /* AppDelegate.swift */; };
 		FC55FB62225E8ACD00D0297D /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC55FB61225E8ACD00D0297D /* WelcomeController.swift */; };
 		FC55FB68225E8ACD00D0297D /* GetItDone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC55FB66225E8ACD00D0297D /* GetItDone.xcdatamodeld */; };
@@ -24,6 +25,7 @@
 		FC4250262266C24500A4A502 /* GDButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDButton.swift; sourceTree = "<group>"; };
 		FC42502D2268D5AC00A4A502 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		FC42502F2268E07700A4A502 /* GDHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDHeaderView.swift; sourceTree = "<group>"; };
+		FC4250332269359600A4A502 /* optionset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = optionset.swift; sourceTree = "<group>"; };
 		FC55FB5C225E8ACD00D0297D /* GetItDone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetItDone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC55FB5F225E8ACD00D0297D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC55FB61225E8ACD00D0297D /* WelcomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				FC55FB77225EA3BE00D0297D /* extension.swift */,
+				FC4250332269359600A4A502 /* optionset.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				FC55FB7B225EACCC00D0297D /* GDLabel.swift in Sources */,
 				FC55FB78225EA3BE00D0297D /* extension.swift in Sources */,
 				FC4250302268E07700A4A502 /* GDHeaderView.swift in Sources */,
+				FC4250342269359600A4A502 /* optionset.swift in Sources */,
 				FC42502E2268D5AC00A4A502 /* ListViewController.swift in Sources */,
 				FC55FB60225E8ACD00D0297D /* AppDelegate.swift in Sources */,
 			);
