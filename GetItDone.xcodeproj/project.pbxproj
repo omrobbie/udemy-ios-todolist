@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FC4250272266C24500A4A502 /* GDButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4250262266C24500A4A502 /* GDButton.swift */; };
+		FC42502E2268D5AC00A4A502 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC42502D2268D5AC00A4A502 /* ListViewController.swift */; };
 		FC55FB60225E8ACD00D0297D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC55FB5F225E8ACD00D0297D /* AppDelegate.swift */; };
 		FC55FB62225E8ACD00D0297D /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC55FB61225E8ACD00D0297D /* WelcomeController.swift */; };
 		FC55FB68225E8ACD00D0297D /* GetItDone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC55FB66225E8ACD00D0297D /* GetItDone.xcdatamodeld */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		FC4250262266C24500A4A502 /* GDButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDButton.swift; sourceTree = "<group>"; };
+		FC42502D2268D5AC00A4A502 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		FC55FB5C225E8ACD00D0297D /* GetItDone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetItDone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC55FB5F225E8ACD00D0297D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC55FB61225E8ACD00D0297D /* WelcomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				FC55FB7C225EB06D00D0297D /* fonts */,
 				FC55FB5F225E8ACD00D0297D /* AppDelegate.swift */,
 				FC55FB61225E8ACD00D0297D /* WelcomeController.swift */,
+				FC42502D2268D5AC00A4A502 /* ListViewController.swift */,
 				FC55FB69225E8ACE00D0297D /* Assets.xcassets */,
 				FC55FB6B225E8ACE00D0297D /* LaunchScreen.storyboard */,
 				FC55FB6E225E8ACE00D0297D /* Info.plist */,
@@ -180,6 +183,7 @@
 				FC55FB68225E8ACD00D0297D /* GetItDone.xcdatamodeld in Sources */,
 				FC55FB7B225EACCC00D0297D /* GDLabel.swift in Sources */,
 				FC55FB78225EA3BE00D0297D /* extension.swift in Sources */,
+				FC42502E2268D5AC00A4A502 /* ListViewController.swift in Sources */,
 				FC55FB60225E8ACD00D0297D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
