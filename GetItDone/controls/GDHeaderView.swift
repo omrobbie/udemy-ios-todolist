@@ -15,6 +15,8 @@ class GDHeaderView: UIView {
     let subtitleLabel = GDLabel(size: 24)
     let addButton = GDButton(title: "+", type: .squareIcon)
 
+    var delegate: GDHeaderViewDelegate?
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -54,5 +56,13 @@ class GDHeaderView: UIView {
         addButton.rightAnchor.constraint(equalTo: rightAnchor, constant: -20 - 8).isActive = true
         addButton.heightAnchor.constraint(equalToConstant: 24).isActive = true
         addButton.widthAnchor.constraint(equalTo: addButton.heightAnchor, multiplier: 1).isActive = true
+
+        addButton.addTarget(self, action: #selector(self.handleAddButton), for: .touchUpInside)
+    }
+
+    @objc func handleAddButton() {
+        if let delegate = self.delegate {
+            delegate.addItem()
+        }
     }
 }

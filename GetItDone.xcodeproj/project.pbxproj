@@ -11,6 +11,7 @@
 		FC42502E2268D5AC00A4A502 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC42502D2268D5AC00A4A502 /* ListViewController.swift */; };
 		FC4250302268E07700A4A502 /* GDHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC42502F2268E07700A4A502 /* GDHeaderView.swift */; };
 		FC4250342269359600A4A502 /* optionset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4250332269359600A4A502 /* optionset.swift */; };
+		FC42503822693EE800A4A502 /* protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC42503722693EE800A4A502 /* protocol.swift */; };
 		FC55FB60225E8ACD00D0297D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC55FB5F225E8ACD00D0297D /* AppDelegate.swift */; };
 		FC55FB62225E8ACD00D0297D /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC55FB61225E8ACD00D0297D /* WelcomeController.swift */; };
 		FC55FB68225E8ACD00D0297D /* GetItDone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC55FB66225E8ACD00D0297D /* GetItDone.xcdatamodeld */; };
@@ -26,6 +27,7 @@
 		FC42502D2268D5AC00A4A502 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		FC42502F2268E07700A4A502 /* GDHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDHeaderView.swift; sourceTree = "<group>"; };
 		FC4250332269359600A4A502 /* optionset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = optionset.swift; sourceTree = "<group>"; };
+		FC42503722693EE800A4A502 /* protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocol.swift; sourceTree = "<group>"; };
 		FC55FB5C225E8ACD00D0297D /* GetItDone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetItDone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC55FB5F225E8ACD00D0297D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC55FB61225E8ACD00D0297D /* WelcomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				FC55FB77225EA3BE00D0297D /* extension.swift */,
 				FC4250332269359600A4A502 /* optionset.swift */,
+				FC42503722693EE800A4A502 /* protocol.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				FC55FB78225EA3BE00D0297D /* extension.swift in Sources */,
 				FC4250302268E07700A4A502 /* GDHeaderView.swift in Sources */,
 				FC4250342269359600A4A502 /* optionset.swift in Sources */,
+				FC42503822693EE800A4A502 /* protocol.swift in Sources */,
 				FC42502E2268D5AC00A4A502 /* ListViewController.swift in Sources */,
 				FC55FB60225E8ACD00D0297D /* AppDelegate.swift in Sources */,
 			);
