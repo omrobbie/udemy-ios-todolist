@@ -1,5 +1,5 @@
 //
-//  NewItemPopup.swift
+//  GDNewItemPopup.swift
 //  GetItDone
 //
 //  Created by omrobbie on 20/04/19.
@@ -8,11 +8,13 @@
 
 import UIKit
 
-class NewItemPopup: GDGradient {
+class GDNewItemPopup: GDGradient {
 
     let cancel = GDButton(title: "   Cancel   ", type: .roundedText, radius: 4)
     let add = GDButton(title: "   Add   ", type: .roundedText, radius: 4)
     let textField = GDTextField(placeholder: " go buy Ikea frames ")
+
+    var delegate: GDNewItemPopupDelegate?
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -50,6 +52,8 @@ class NewItemPopup: GDGradient {
     }
 
     @objc func handleAdd() {
-        print("Tdying to handle add")
+        if let delegate = self.delegate {
+            delegate.addItemToList()
+        }
     }
 }

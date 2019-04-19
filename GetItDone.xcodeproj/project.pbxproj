@@ -13,7 +13,7 @@
 		FC4250302268E07700A4A502 /* GDHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC42502F2268E07700A4A502 /* GDHeaderView.swift */; };
 		FC4250342269359600A4A502 /* optionset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4250332269359600A4A502 /* optionset.swift */; };
 		FC42503822693EE800A4A502 /* protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC42503722693EE800A4A502 /* protocol.swift */; };
-		FC42503A226A3B9D00A4A502 /* NewItemPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC425039226A3B9D00A4A502 /* NewItemPopup.swift */; };
+		FC42503A226A3B9D00A4A502 /* GDNewItemPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC425039226A3B9D00A4A502 /* GDNewItemPopup.swift */; };
 		FC55FB60225E8ACD00D0297D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC55FB5F225E8ACD00D0297D /* AppDelegate.swift */; };
 		FC55FB62225E8ACD00D0297D /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC55FB61225E8ACD00D0297D /* WelcomeController.swift */; };
 		FC55FB68225E8ACD00D0297D /* GetItDone.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC55FB66225E8ACD00D0297D /* GetItDone.xcdatamodeld */; };
@@ -31,7 +31,7 @@
 		FC42502F2268E07700A4A502 /* GDHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDHeaderView.swift; sourceTree = "<group>"; };
 		FC4250332269359600A4A502 /* optionset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = optionset.swift; sourceTree = "<group>"; };
 		FC42503722693EE800A4A502 /* protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocol.swift; sourceTree = "<group>"; };
-		FC425039226A3B9D00A4A502 /* NewItemPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemPopup.swift; sourceTree = "<group>"; };
+		FC425039226A3B9D00A4A502 /* GDNewItemPopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDNewItemPopup.swift; sourceTree = "<group>"; };
 		FC55FB5C225E8ACD00D0297D /* GetItDone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GetItDone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC55FB5F225E8ACD00D0297D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC55FB61225E8ACD00D0297D /* WelcomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 				FC55FB7A225EACCC00D0297D /* GDLabel.swift */,
 				FC4250262266C24500A4A502 /* GDButton.swift */,
 				FC42502F2268E07700A4A502 /* GDHeaderView.swift */,
-				FC425039226A3B9D00A4A502 /* NewItemPopup.swift */,
+				FC425039226A3B9D00A4A502 /* GDNewItemPopup.swift */,
 				FC0A10A1226A666000444160 /* GDTextField.swift */,
 			);
 			path = controls;
@@ -207,7 +207,7 @@
 				FC55FB7B225EACCC00D0297D /* GDLabel.swift in Sources */,
 				FC55FB78225EA3BE00D0297D /* extension.swift in Sources */,
 				FC0A10A2226A666000444160 /* GDTextField.swift in Sources */,
-				FC42503A226A3B9D00A4A502 /* NewItemPopup.swift in Sources */,
+				FC42503A226A3B9D00A4A502 /* GDNewItemPopup.swift in Sources */,
 				FC4250302268E07700A4A502 /* GDHeaderView.swift in Sources */,
 				FC4250342269359600A4A502 /* optionset.swift in Sources */,
 				FC42503822693EE800A4A502 /* protocol.swift in Sources */,

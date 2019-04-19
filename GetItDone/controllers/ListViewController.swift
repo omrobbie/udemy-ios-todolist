@@ -8,10 +8,10 @@
 
 import UIKit
 
-class ListViewController: UIViewController, GDHeaderViewDelegate {
+class ListViewController: UIViewController, GDHeaderViewDelegate, GDNewItemPopupDelegate {
 
     let header = GDHeaderView(title: "Stuff to get done", subtitle: "4 left")
-    let popup = NewItemPopup()
+    let popup = GDNewItemPopup()
 
     var keyboardHeight: CGFloat = 346
 
@@ -19,6 +19,7 @@ class ListViewController: UIViewController, GDHeaderViewDelegate {
         super.viewDidLoad()
 
         header.delegate = self
+        popup.delegate = self
         popup.textField.delegate = self
 
         view.backgroundColor = .white
@@ -46,8 +47,11 @@ class ListViewController: UIViewController, GDHeaderViewDelegate {
         self.keyboardHeight = keyboardSize.height
     }
 
-    func addItem() {
+    func openAddItemPopup() {
         print("Trying to add item from header")
+    }
+    func addItemToList() {
+        print("Trying to add item to the list")
     }
 }
 

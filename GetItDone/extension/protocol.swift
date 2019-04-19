@@ -8,5 +8,10 @@
 
 protocol GDHeaderViewDelegate {
 
-    func addItem()
+    func openAddItemPopup()
+}
+
+protocol GDNewItemPopupDelegate {
+
+    func addItemToList()
 }
