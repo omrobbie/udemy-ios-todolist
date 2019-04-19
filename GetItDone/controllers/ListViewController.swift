@@ -13,6 +13,8 @@ class ListViewController: UIViewController, GDHeaderViewDelegate {
     let header = GDHeaderView()
     let popup = NewItemPopup()
 
+    var keyboardHeight: CGFloat = 0
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,6 +32,20 @@ class ListViewController: UIViewController, GDHeaderViewDelegate {
         popup.leftAnchor.constraint(equalTo: view.leftAnchor,constant: 20).isActive = true
         popup.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
         popup.heightAnchor.constraint(equalToConstant: 80).isActive = true
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardDidShowNotification, object: nil)
+    }
+
+    @objc func keyboardWillShow(notification: Notification) {
+        let keyboardSize = (notification.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue.size
+
+        self.keyboardHeight = keyboardSize.height
+
+        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.85, initialSpringVelocity: 2, options: .curveEaseIn, animations: {
+            self.popup.transform = CGAffineTransform(translationX: 0, y: -self.keyboardHeight)
+        }, completion: nil)
     }
 
     func addItem() {
