@@ -50,8 +50,8 @@ class ListViewController: UIViewController, GDHeaderViewDelegate, GDNewItemPopup
     func openAddItemPopup() {
         print("Trying to add item from header")
     }
-    func addItemToList() {
-        print("Trying to add item to the list")
+    func addItemToList(text: String) {
+        print("Trying to add \(text) to the list")
     }
 }
 

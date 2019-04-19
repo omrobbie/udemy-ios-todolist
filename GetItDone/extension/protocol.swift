@@ -13,5 +13,5 @@ protocol GDHeaderViewDelegate {
 
 protocol GDNewItemPopupDelegate {
 
-    func addItemToList()
+    func addItemToList(text: String)
 }
