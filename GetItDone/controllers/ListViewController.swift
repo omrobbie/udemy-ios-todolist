@@ -10,15 +10,17 @@ import UIKit
 
 class ListViewController: UIViewController, GDHeaderViewDelegate {
 
-    let header = GDHeaderView()
+    let header = GDHeaderView(title: "Stuff to get done", subtitle: "4 left")
     let popup = NewItemPopup()
 
-    var keyboardHeight: CGFloat = 0
+    var keyboardHeight: CGFloat = 346
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         header.delegate = self
+        popup.textField.delegate = self
+
         view.backgroundColor = .white
 
         view.addSubview(header)
@@ -42,13 +44,19 @@ class ListViewController: UIViewController, GDHeaderViewDelegate {
         let keyboardSize = (notification.userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue.size
 
         self.keyboardHeight = keyboardSize.height
-
-        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.85, initialSpringVelocity: 2, options: .curveEaseIn, animations: {
-            self.popup.transform = CGAffineTransform(translationX: 0, y: -self.keyboardHeight)
-        }, completion: nil)
     }
 
     func addItem() {
         print("Trying to add item from header")
+    }
+}
+
+extension ListViewController: UITextFieldDelegate {
+
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        print(#function, self.keyboardHeight)
+        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.85, initialSpringVelocity: 2, options: .curveEaseIn, animations: {
+            self.popup.transform = CGAffineTransform(translationX: 0, y: -self.keyboardHeight)
+        }, completion: nil)
     }
 }
