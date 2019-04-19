@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC0A10A2226A666000444160 /* GDTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0A10A1226A666000444160 /* GDTextField.swift */; };
 		FC4250272266C24500A4A502 /* GDButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4250262266C24500A4A502 /* GDButton.swift */; };
 		FC42502E2268D5AC00A4A502 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC42502D2268D5AC00A4A502 /* ListViewController.swift */; };
 		FC4250302268E07700A4A502 /* GDHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC42502F2268E07700A4A502 /* GDHeaderView.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC0A10A1226A666000444160 /* GDTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDTextField.swift; sourceTree = "<group>"; };
 		FC4250262266C24500A4A502 /* GDButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDButton.swift; sourceTree = "<group>"; };
 		FC42502D2268D5AC00A4A502 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		FC42502F2268E07700A4A502 /* GDHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDHeaderView.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				FC4250262266C24500A4A502 /* GDButton.swift */,
 				FC42502F2268E07700A4A502 /* GDHeaderView.swift */,
 				FC425039226A3B9D00A4A502 /* NewItemPopup.swift */,
+				FC0A10A1226A666000444160 /* GDTextField.swift */,
 			);
 			path = controls;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				FC55FB68225E8ACD00D0297D /* GetItDone.xcdatamodeld in Sources */,
 				FC55FB7B225EACCC00D0297D /* GDLabel.swift in Sources */,
 				FC55FB78225EA3BE00D0297D /* extension.swift in Sources */,
+				FC0A10A2226A666000444160 /* GDTextField.swift in Sources */,
 				FC42503A226A3B9D00A4A502 /* NewItemPopup.swift in Sources */,
 				FC4250302268E07700A4A502 /* GDHeaderView.swift in Sources */,
 				FC4250342269359600A4A502 /* optionset.swift in Sources */,
