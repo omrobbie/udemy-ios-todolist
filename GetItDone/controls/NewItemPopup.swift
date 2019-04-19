@@ -33,5 +33,16 @@ class NewItemPopup: GDGradient {
         add.rightAnchor.constraint(equalTo: rightAnchor, constant: inset * -1).isActive = true
         add.topAnchor.constraint(equalTo: topAnchor, constant: inset).isActive = true
         add.heightAnchor.constraint(equalToConstant: 20).isActive = true
+
+        cancel.addTarget(self, action: #selector(self.handleCancel), for: .touchUpInside)
+        add.addTarget(self, action: #selector(self.handleAdd), for: .touchUpInside)
+    }
+
+    @objc func handleCancel() {
+        print("Trying to handle cancel")
+    }
+
+    @objc func handleAdd() {
+        print("Tdying to handle add")
     }
 }
