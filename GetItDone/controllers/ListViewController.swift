@@ -13,9 +13,9 @@ class ListViewController: UIViewController, GDHeaderViewDelegate, GDNewItemPopup
     let header = GDHeaderView(title: "Stuff to get done", subtitle: "4 left")
     let popup = GDNewItemPopup()
 
-    let bg: UIView = {
+    lazy var bg: UIView = {
         let view = GDGradient()
-        view.layer.cornerRadius = 24
+        view.layer.cornerRadius = tbInset
 
         return view
     }()
@@ -23,6 +23,8 @@ class ListViewController: UIViewController, GDHeaderViewDelegate, GDNewItemPopup
     let listTable = GDTableView()
 
     let CELL_ID = "cell_id"
+
+    let tbInset: CGFloat = 16
 
     var listData = [ToDo]()
 
@@ -54,10 +56,10 @@ class ListViewController: UIViewController, GDHeaderViewDelegate, GDNewItemPopup
         bg.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
 
         view.addSubview(listTable)
-        listTable.topAnchor.constraint(equalTo: bg.topAnchor, constant: 8).isActive = true
-        listTable.rightAnchor.constraint(equalTo: bg.rightAnchor, constant: -8).isActive = true
-        listTable.bottomAnchor.constraint(equalTo: bg.bottomAnchor, constant: -8).isActive = true
-        listTable.leftAnchor.constraint(equalTo: bg.leftAnchor, constant: 8).isActive = true
+        listTable.topAnchor.constraint(equalTo: bg.topAnchor, constant: tbInset).isActive = true
+        listTable.rightAnchor.constraint(equalTo: bg.rightAnchor, constant: tbInset * -1).isActive = true
+        listTable.bottomAnchor.constraint(equalTo: bg.bottomAnchor, constant: tbInset * -1).isActive = true
+        listTable.leftAnchor.constraint(equalTo: bg.leftAnchor, constant: tbInset).isActive = true
 
         view.addSubview(popup)
         popup.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
@@ -118,6 +120,6 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 44
+        return 42
     }
 }
