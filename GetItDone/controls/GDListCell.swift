@@ -10,14 +10,15 @@ import UIKit
 
 class GDListCell: UITableViewCell {
 
-    let titleLabel = GDLabel(color: .grayZero, size: 14)
+//    let titleLabel = GDLabel(color: .grayZero, size: 14)
+    let titleLabel = GDTextField(placeholder: "ToDo", radius: 0, inset: 14)
 
     var toDo: ToDo? {
         didSet {
             if let toDo = toDo {
-                print(toDo.id)
-                print(toDo.title)
-                print(toDo.status)
+//                print(toDo.id)
+//                print(toDo.title)
+//                print(toDo.status)
 
                 self.titleLabel.text = toDo.title
             }
@@ -36,8 +37,8 @@ class GDListCell: UITableViewCell {
 
         addSubview(titleLabel)
         titleLabel.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
-        titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 4).isActive = true
-        titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -4).isActive = true
+        titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 8).isActive = true
+        titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -8).isActive = true
         titleLabel.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
 
         titleLabel.backgroundColor = .white
