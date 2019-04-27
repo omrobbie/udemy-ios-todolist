@@ -57,15 +57,17 @@ class ListViewController: UIViewController, GDHeaderViewDelegate, GDNewItemPopup
 
 extension ListViewController: UITextFieldDelegate {
 
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.85, initialSpringVelocity: 2, options: .curveEaseIn, animations: {
-            self.popup.transform = CGAffineTransform(translationX: 0, y: -self.keyboardHeight)
+    func animateView(view: UIView, transform: CGAffineTransform) {
+        UIView.animate(withDuration: 0.25, delay: 0, usingSpringWithDamping: 0.85, initialSpringVelocity: 2, options: .curveEaseIn, animations: {
+            view.transform = transform
         }, completion: nil)
     }
 
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        animateView(view: self.popup, transform: CGAffineTransform(translationX: 0, y: -self.keyboardHeight))
+    }
+
     func textFieldDidEndEditing(_ textField: UITextField) {
-        UIView.animate(withDuration: 0.3, delay: 0, usingSpringWithDamping: 0.85, initialSpringVelocity: 2, options: .curveEaseIn, animations: {
-            self.popup.transform = CGAffineTransform(translationX: 0, y: 0)
-        }, completion: nil)
+        animateView(view: self.popup, transform: CGAffineTransform(translationX: 0, y: 0))
     }
 }
