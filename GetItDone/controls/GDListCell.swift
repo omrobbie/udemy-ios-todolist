@@ -10,6 +10,18 @@ import UIKit
 
 class GDListCell: UITableViewCell {
 
+    var toDo: ToDo? {
+        didSet {
+            if let toDo = toDo {
+                print(toDo.id)
+                print(toDo.title)
+                print(toDo.status)
+
+                self.textLabel?.text = toDo.title
+            }
+        }
+    }
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
