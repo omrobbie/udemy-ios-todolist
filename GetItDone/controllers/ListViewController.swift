@@ -13,6 +13,8 @@ class ListViewController: UIViewController, GDHeaderViewDelegate, GDNewItemPopup
     let header = GDHeaderView(title: "Stuff to get done", subtitle: "4 left")
     let popup = GDNewItemPopup()
 
+    let bg = GDGradient()
+
     var keyboardHeight: CGFloat = 346
 
     override func viewDidLoad() {

@@ -22,6 +22,7 @@
 		FC55FB75225E9F1C00D0297D /* GDGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC55FB74225E9F1C00D0297D /* GDGradient.swift */; };
 		FC55FB78225EA3BE00D0297D /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC55FB77225EA3BE00D0297D /* extension.swift */; };
 		FC55FB7B225EACCC00D0297D /* GDLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC55FB7A225EACCC00D0297D /* GDLabel.swift */; };
+		FCD524D72274D9B80004E406 /* GDTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD524D62274D9B80004E406 /* GDTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		FC55FB7A225EACCC00D0297D /* GDLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDLabel.swift; sourceTree = "<group>"; };
 		FC55FB7E225EB0BF00D0297D /* Raleway-v4020-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-v4020-Regular.otf"; sourceTree = "<group>"; };
 		FC55FB7F225EB1F500D0297D /* Raleway-v4020-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-v4020-SemiBold.otf"; sourceTree = "<group>"; };
+		FCD524D62274D9B80004E406 /* GDTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				FC42502F2268E07700A4A502 /* GDHeaderView.swift */,
 				FC425039226A3B9D00A4A502 /* GDNewItemPopup.swift */,
 				FC0A10A1226A666000444160 /* GDTextField.swift */,
+				FCD524D62274D9B80004E406 /* GDTableView.swift */,
 			);
 			path = controls;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				FC55FB78225EA3BE00D0297D /* extension.swift in Sources */,
 				FC0A10A2226A666000444160 /* GDTextField.swift in Sources */,
 				FC42503A226A3B9D00A4A502 /* GDNewItemPopup.swift in Sources */,
+				FCD524D72274D9B80004E406 /* GDTableView.swift in Sources */,
 				FC4250302268E07700A4A502 /* GDHeaderView.swift in Sources */,
 				FC4250342269359600A4A502 /* optionset.swift in Sources */,
 				FC42503822693EE800A4A502 /* protocol.swift in Sources */,
