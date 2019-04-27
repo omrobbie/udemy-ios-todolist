@@ -24,6 +24,8 @@ class ListViewController: UIViewController, GDHeaderViewDelegate, GDNewItemPopup
 
     let CELL_ID = "cell_id"
 
+    let listData = ["One", "Two", "Three", "Four", "Five"]
+
     var keyboardHeight: CGFloat = 346
 
     override func viewDidLoad() {
@@ -96,15 +98,16 @@ extension ListViewController: UITextFieldDelegate {
 extension ListViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return self.listData.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CELL_ID, for: indexPath)
 
-        cell.textLabel?.text = "This is cell \(indexPath.row)"
+        cell.textLabel?.text = self.listData[indexPath.row]
+        cell.textLabel?.textColor = .grayZero
         cell.selectionStyle = .none
-        cell.backgroundColor = .clear
+        cell.backgroundColor = .white
 
         return cell
     }
