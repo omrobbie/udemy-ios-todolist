@@ -37,7 +37,7 @@ class ListViewController: UIViewController, GDHeaderViewDelegate, GDNewItemPopup
 
         listTable.delegate = self
         listTable.dataSource = self
-        listTable.register(UITableViewCell.self, forCellReuseIdentifier: CELL_ID)
+        listTable.register(GDListCell.self, forCellReuseIdentifier: CELL_ID)
 
         view.backgroundColor = .white
 
@@ -102,12 +102,8 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: CELL_ID, for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: CELL_ID, for: indexPath) as! GDListCell
         cell.textLabel?.text = self.listData[indexPath.row]
-        cell.textLabel?.textColor = .grayZero
-        cell.selectionStyle = .none
-        cell.backgroundColor = .white
 
         return cell
     }

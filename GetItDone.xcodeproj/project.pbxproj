@@ -23,6 +23,7 @@
 		FC55FB78225EA3BE00D0297D /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC55FB77225EA3BE00D0297D /* extension.swift */; };
 		FC55FB7B225EACCC00D0297D /* GDLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC55FB7A225EACCC00D0297D /* GDLabel.swift */; };
 		FCD524D72274D9B80004E406 /* GDTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD524D62274D9B80004E406 /* GDTableView.swift */; };
+		FCD524D922750FE50004E406 /* GDListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD524D822750FE50004E406 /* GDListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		FC55FB7E225EB0BF00D0297D /* Raleway-v4020-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-v4020-Regular.otf"; sourceTree = "<group>"; };
 		FC55FB7F225EB1F500D0297D /* Raleway-v4020-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-v4020-SemiBold.otf"; sourceTree = "<group>"; };
 		FCD524D62274D9B80004E406 /* GDTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDTableView.swift; sourceTree = "<group>"; };
+		FCD524D822750FE50004E406 /* GDListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				FC425039226A3B9D00A4A502 /* GDNewItemPopup.swift */,
 				FC0A10A1226A666000444160 /* GDTextField.swift */,
 				FCD524D62274D9B80004E406 /* GDTableView.swift */,
+				FCD524D822750FE50004E406 /* GDListCell.swift */,
 			);
 			path = controls;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCD524D922750FE50004E406 /* GDListCell.swift in Sources */,
 				FC55FB75225E9F1C00D0297D /* GDGradient.swift in Sources */,
 				FC4250272266C24500A4A502 /* GDButton.swift in Sources */,
 				FC55FB62225E8ACD00D0297D /* WelcomeController.swift in Sources */,
