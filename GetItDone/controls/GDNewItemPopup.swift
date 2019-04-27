@@ -48,7 +48,7 @@ class GDNewItemPopup: GDGradient {
     }
 
     @objc func handleCancel() {
-        print("Trying to handle cancel")
+        textField.resignFirstResponder()
     }
 
     @objc func handleAdd() {
