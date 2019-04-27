@@ -10,6 +10,8 @@ import UIKit
 
 class GDListCell: UITableViewCell {
 
+    let titleLabel = GDLabel(color: .grayZero, size: 14)
+
     var toDo: ToDo? {
         didSet {
             if let toDo = toDo {
@@ -17,7 +19,7 @@ class GDListCell: UITableViewCell {
                 print(toDo.title)
                 print(toDo.status)
 
-                self.textLabel?.text = toDo.title
+                self.titleLabel.text = toDo.title
             }
         }
     }
@@ -29,8 +31,15 @@ class GDListCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
 
-        textLabel?.textColor = .grayZero
         selectionStyle = .none
-        backgroundColor = .white
+        backgroundColor = .clear
+
+        addSubview(titleLabel)
+        titleLabel.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
+        titleLabel.topAnchor.constraint(equalTo: topAnchor, constant: 4).isActive = true
+        titleLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -4).isActive = true
+        titleLabel.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
+
+        titleLabel.backgroundColor = .white
     }
 }
