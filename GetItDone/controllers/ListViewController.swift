@@ -24,7 +24,7 @@ class ListViewController: UIViewController, GDHeaderViewDelegate, GDNewItemPopup
 
     let CELL_ID = "cell_id"
 
-    let listData = ["One", "Two", "Three", "Four", "Five"]
+    var listData = [ToDo]()
 
     var keyboardHeight: CGFloat = 346
 
@@ -64,6 +64,14 @@ class ListViewController: UIViewController, GDHeaderViewDelegate, GDNewItemPopup
         popup.leftAnchor.constraint(equalTo: view.leftAnchor,constant: 20).isActive = true
         popup.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
         popup.heightAnchor.constraint(equalToConstant: 80).isActive = true
+
+        listData = [
+            ToDo(id: 0, title: "One", status: false),
+            ToDo(id: 1, title: "Two", status: false),
+            ToDo(id: 2, title: "Three", status: false),
+            ToDo(id: 3, title: "Four", status: false),
+            ToDo(id: 4, title: "Five", status: false)
+        ]
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -103,7 +111,7 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CELL_ID, for: indexPath) as! GDListCell
-        cell.textLabel?.text = self.listData[indexPath.row]
+        cell.textLabel?.text = self.listData[indexPath.row].title
 
         return cell
     }

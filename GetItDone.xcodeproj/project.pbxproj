@@ -24,6 +24,7 @@
 		FC55FB7B225EACCC00D0297D /* GDLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC55FB7A225EACCC00D0297D /* GDLabel.swift */; };
 		FCD524D72274D9B80004E406 /* GDTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD524D62274D9B80004E406 /* GDTableView.swift */; };
 		FCD524D922750FE50004E406 /* GDListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD524D822750FE50004E406 /* GDListCell.swift */; };
+		FCD524DC2275118E0004E406 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD524DB2275118E0004E406 /* ToDo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		FC55FB7F225EB1F500D0297D /* Raleway-v4020-SemiBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-v4020-SemiBold.otf"; sourceTree = "<group>"; };
 		FCD524D62274D9B80004E406 /* GDTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDTableView.swift; sourceTree = "<group>"; };
 		FCD524D822750FE50004E406 /* GDListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDListCell.swift; sourceTree = "<group>"; };
+		FCD524DB2275118E0004E406 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 		FC55FB5E225E8ACD00D0297D /* GetItDone */ = {
 			isa = PBXGroup;
 			children = (
+				FCD524DA2275116E0004E406 /* model */,
 				FC4250322268E6CB00A4A502 /* controllers */,
 				FC55FB76225EA3A100D0297D /* extension */,
 				FC55FB79225EACAE00D0297D /* controls */,
@@ -134,6 +137,14 @@
 				FC55FB7F225EB1F500D0297D /* Raleway-v4020-SemiBold.otf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		FCD524DA2275116E0004E406 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FCD524DB2275118E0004E406 /* ToDo.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +228,7 @@
 				FC42503A226A3B9D00A4A502 /* GDNewItemPopup.swift in Sources */,
 				FCD524D72274D9B80004E406 /* GDTableView.swift in Sources */,
 				FC4250302268E07700A4A502 /* GDHeaderView.swift in Sources */,
+				FCD524DC2275118E0004E406 /* ToDo.swift in Sources */,
 				FC4250342269359600A4A502 /* optionset.swift in Sources */,
 				FC42503822693EE800A4A502 /* protocol.swift in Sources */,
 				FC42502E2268D5AC00A4A502 /* ListViewController.swift in Sources */,
