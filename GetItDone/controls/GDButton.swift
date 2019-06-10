@@ -32,10 +32,6 @@ class GDButton: UIButton {
     }
 
     func phaseTwo() {
-        self.setTitle(self.title, for: .normal)
-        self.setTitleColor(.grayZero , for: .normal)
-        self.backgroundColor = .white
-
         if let titleLabel = self.titleLabel {
             titleLabel.font = UIFont.init(name: "Raleway-v4020-Regular", size: 16)
         }
@@ -51,12 +47,18 @@ class GDButton: UIButton {
     }
 
     func roundedText() {
+        self.setTitle(self.title, for: .normal)
+        self.setTitleColor(.grayZero , for: .normal)
+        self.backgroundColor = .white
+
         self.layer.cornerRadius = self.radius
     }
 
     func squareIcon() {
-        if let titleLabel = self.titleLabel {
-            titleLabel.font = UIFont.init(name: "Raleway-v4020-Regular", size: 24)
-        }
+//        if let titleLabel = self.titleLabel {
+//            titleLabel.font = UIFont.init(name: "Raleway-v4020-Regular", size: 24)
+//        }
+
+        setImage(UIImage(named: "add-item"), for: .normal)
     }
 }
