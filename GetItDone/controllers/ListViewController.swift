@@ -70,7 +70,7 @@ class ListViewController: UIViewController, GDHeaderViewDelegate, GDNewItemPopup
         listData = [
             ToDo(id: 0, title: "One", status: false),
             ToDo(id: 1, title: "Two", status: false),
-            ToDo(id: 2, title: "Three", status: false),
+            ToDo(id: 2, title: "Three", status: true),
             ToDo(id: 3, title: "Four", status: false),
             ToDo(id: 4, title: "Five", status: false)
         ]
