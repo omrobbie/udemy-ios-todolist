@@ -172,7 +172,18 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource, GDList
         return 42
     }
 
-    func toggleToDo(status: Bool) {
-        print("Trying to toggle todo in DB")
+    func toggleToDo(id: Int, status: Bool) {
+        let newListData = self.listData.map { (toDo) -> ToDo in
+            if toDo.id == id {
+                var newToDo = toDo
+                newToDo.status = status
+
+                return newToDo
+            }
+            return toDo
+        }
+
+        listData = newListData
+        listTable.reloadData()
     }
 }

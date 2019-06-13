@@ -11,6 +11,7 @@ import UIKit
 class GDCheckBox: UIButton {
 
     var delegate: GDListCellDelegate?
+    var id: Int?
 
     var toggled: Bool? {
         didSet {
@@ -27,9 +28,9 @@ class GDCheckBox: UIButton {
     }
 
     @objc func toggleStatus() {
-        if let status = toggled, let delegate = self.delegate {
+        if let status = toggled, let delegate = self.delegate, let id = id {
             toggled = !status
-            delegate.toggleToDo(status: !status)
+            delegate.toggleToDo(id: id, status: !status)
         }
     }
 

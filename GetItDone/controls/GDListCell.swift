@@ -30,8 +30,8 @@ class GDListCell: UITableViewCell {
 //                print(toDo.status)
 
                 box.toggled = toDo.status
-
-                self.textField.text = toDo.title
+                box.id = toDo.id
+                textField.text = toDo.title
             }
         }
     }
