@@ -105,7 +105,7 @@ extension ListViewController: UITextFieldDelegate {
     }
 }
 
-extension ListViewController: UITableViewDelegate, UITableViewDataSource {
+extension ListViewController: UITableViewDelegate, UITableViewDataSource, GDListCellDelegate {
 
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
@@ -145,18 +145,34 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
                 count += 1
             }
         }
+
         return count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CELL_ID, for: indexPath) as! GDListCell
 //        cell.textLabel?.text = self.listData[indexPath.row].title
-        cell.toDo = self.listData[indexPath.row]
+        cell.box.delegate = self
 
+        var itemsForSection: [ToDo] = []
+
+        self.listData.forEach { (toDo) in
+            if indexPath.section == 0 && !toDo.status {
+                itemsForSection.append(toDo)
+            } else if indexPath.section == 1 && toDo.status {
+                itemsForSection.append(toDo)
+            }
+        }
+
+        cell.toDo = itemsForSection[indexPath.row]
         return cell
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 42
+    }
+
+    func toggleToDo(status: Bool) {
+        print("Trying to toggle todo in DB")
     }
 }
