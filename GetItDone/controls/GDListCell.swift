@@ -22,6 +22,8 @@ class GDListCell: UITableViewCell {
 
     let box = GDCheckBox()
 
+    var delegate: GDListCellDelegate?
+
     var toDo: ToDo? {
         didSet {
             if let toDo = toDo {
@@ -65,5 +67,19 @@ class GDListCell: UITableViewCell {
         box.centerYAnchor.constraint(equalTo: centerYAnchor).isActive = true
         box.widthAnchor.constraint(equalToConstant: 22).isActive = true
         box.heightAnchor.constraint(equalTo: box.widthAnchor).isActive = true
+
+        box.addTarget(self, action: #selector(toggleStatus), for: .touchUpInside)
+    }
+
+    @objc func toggleStatus() {
+//        if let status = toggled, let delegate = self.delegate, let id = id {
+//            toggled = !status
+//            delegate.toggleToDo(id: id, status: !status)
+//        }
+
+        if let delegate = self.delegate, let toDo = self.toDo {
+            let newTodo = ToDo(id: toDo.id, title: textField.text!, status: !toDo.status)
+            delegate.toggleToDo(toDo: newTodo)
+        }
     }
 }

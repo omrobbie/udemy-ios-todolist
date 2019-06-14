@@ -10,7 +10,6 @@ import UIKit
 
 class GDCheckBox: UIButton {
 
-    var delegate: GDListCellDelegate?
     var id: Int?
 
     var toggled: Bool? {
@@ -27,13 +26,6 @@ class GDCheckBox: UIButton {
         }
     }
 
-    @objc func toggleStatus() {
-        if let status = toggled, let delegate = self.delegate, let id = id {
-            toggled = !status
-            delegate.toggleToDo(id: id, status: !status)
-        }
-    }
-
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -44,7 +36,5 @@ class GDCheckBox: UIButton {
 
         layer.borderWidth = 1
         layer.borderColor = UIColor.grayZero.cgColor
-
-        addTarget(self, action: #selector(toggleStatus), for: .touchUpInside)
     }
 }
