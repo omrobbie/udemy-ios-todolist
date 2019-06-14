@@ -53,7 +53,7 @@ class GDHeaderView: UIView {
 
         addSubview(addButton)
         addButton.bottomAnchor.constraint(equalTo: subtitleLabel.bottomAnchor).isActive = true
-        addButton.rightAnchor.constraint(equalTo: rightAnchor, constant: -20 - 8).isActive = true
+        addButton.rightAnchor.constraint(equalTo: rightAnchor, constant: -20 - 16 - 14).isActive = true
         addButton.heightAnchor.constraint(equalToConstant: 24).isActive = true
         addButton.widthAnchor.constraint(equalTo: addButton.heightAnchor, multiplier: 1).isActive = true
 

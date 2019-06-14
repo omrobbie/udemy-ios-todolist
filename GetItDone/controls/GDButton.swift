@@ -59,6 +59,7 @@ class GDButton: UIButton {
 //            titleLabel.font = UIFont.init(name: "Raleway-v4020-Regular", size: 24)
 //        }
 
-        setImage(UIImage(named: "add-item"), for: .normal)
+        backgroundColor = .white
+        setImage(UIImage(named: "add-icon"), for: .normal)
     }
 }
