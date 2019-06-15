@@ -98,7 +98,15 @@ class ListViewController: UIViewController, GDHeaderViewDelegate, GDNewItemPopup
     }
 
     func addItemToList(text: String) {
-        print("Trying to add \(text) to the list")
+        if notInList(text: text) {
+            let newItem = ToDo(id: listData.count, title: text, status: false)
+
+            listData.append(newItem)
+            listTable.reloadData()
+            updateHeaderItemsLeft()
+            popup.textField.text = ""
+            popup.animatePopup()
+        }
     }
 
     func updateHeaderItemsLeft() {
@@ -109,6 +117,18 @@ class ListViewController: UIViewController, GDHeaderViewDelegate, GDNewItemPopup
                 header.itemLeft += 1
             }
         }
+    }
+
+    func notInList(text: String) -> Bool {
+        var isNotInList = true
+
+        listData.forEach { (toDo) in
+            if toDo.title == text {
+                isNotInList = false
+            }
+        }
+
+        return isNotInList
     }
 }
 
@@ -156,7 +176,7 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource, GDList
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         var count = 0
 
-        self.listData.forEach { (toDo) in
+        listData.forEach { (toDo) in
             if section == 0 && !toDo.status {
                 count += 1
             } else if section == 1 && toDo.status {
