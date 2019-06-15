@@ -16,6 +16,8 @@ class GDNewItemPopup: GDGradient {
 
     var delegate: GDNewItemPopupDelegate?
 
+    var popupLocation: CGFloat = 70
+
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -46,15 +48,28 @@ class GDNewItemPopup: GDGradient {
 
         cancel.addTarget(self, action: #selector(self.handleCancel), for: .touchUpInside)
         add.addTarget(self, action: #selector(self.handleAdd), for: .touchUpInside)
+
+        self.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(animatePopup)))
     }
 
     @objc func handleCancel() {
         textField.resignFirstResponder()
+        animatePopup()
     }
 
     @objc func handleAdd() {
         if let delegate = self.delegate, let textFieldText = self.textField.text {
             delegate.addItemToList(text: textFieldText)
+        }
+    }
+
+    @objc func animatePopup() {
+        self.animateView(transform: CGAffineTransform(translationX: 0, y: popupLocation), duration: 0.3)
+
+        if popupLocation == 70 {
+            popupLocation = 0
+        } else {
+            popupLocation = 70
         }
     }
 }

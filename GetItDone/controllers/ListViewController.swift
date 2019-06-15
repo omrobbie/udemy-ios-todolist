@@ -30,8 +30,6 @@ class ListViewController: UIViewController, GDHeaderViewDelegate, GDNewItemPopup
 
     var keyboardHeight: CGFloat = 346
 
-    var popupLocation: CGFloat = 70
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -96,13 +94,7 @@ class ListViewController: UIViewController, GDHeaderViewDelegate, GDNewItemPopup
     }
 
     func openAddItemPopup() {
-        popup.animateView(transform: CGAffineTransform(translationX: 0, y: popupLocation), duration: 0.3)
-
-        if popupLocation == 70 {
-            popupLocation = 0
-        } else {
-            popupLocation = 70
-        }
+        popup.animatePopup()
     }
 
     func addItemToList(text: String) {
