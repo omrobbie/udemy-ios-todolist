@@ -24,6 +24,7 @@ class GDNewItemPopup: GDGradient {
         super.init(frame: frame)
 
         self.layer.cornerRadius = 16
+        self.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
 
         let inset: CGFloat = 12
 
