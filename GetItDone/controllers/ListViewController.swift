@@ -30,6 +30,8 @@ class ListViewController: UIViewController, GDHeaderViewDelegate, GDNewItemPopup
 
     var keyboardHeight: CGFloat = 346
 
+    var bgBottom: NSLayoutConstraint!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -52,7 +54,8 @@ class ListViewController: UIViewController, GDHeaderViewDelegate, GDNewItemPopup
         view.addSubview(bg)
         bg.topAnchor.constraint(equalTo: header.bottomAnchor, constant: 20).isActive = true
         bg.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
-        bg.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100).isActive = true
+        bgBottom = bg.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100)
+        bgBottom.isActive = true
         bg.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20).isActive = true
 
         view.addSubview(listTable)
@@ -135,11 +138,35 @@ class ListViewController: UIViewController, GDHeaderViewDelegate, GDNewItemPopup
 extension ListViewController: UITextFieldDelegate {
 
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        self.popup.animateView(transform: CGAffineTransform(translationX: 0, y: -self.keyboardHeight), duration: 0.7)
+        var heightToAnimate = -keyboardHeight - 20
+
+        if textField == popup.textField {
+            popup.animateView(transform: CGAffineTransform(translationX: 0, y: -self.keyboardHeight), duration: 0.7)
+            heightToAnimate -= 80
+        }
+
+        bgBottom.constant = heightToAnimate
+
+        UIView.animate(withDuration: 0.35) {
+            self.view.layoutIfNeeded()
+        }
     }
 
     func textFieldDidEndEditing(_ textField: UITextField) {
-        self.popup.animateView(transform: CGAffineTransform(translationX: 0, y: 0), duration: 0.55)
+        bgBottom.constant = -100
+
+        UIView.animate(withDuration: 0.35) {
+            self.view.layoutIfNeeded()
+        }
+
+        if textField == popup.textField {
+            popup.animateView(transform: CGAffineTransform(translationX: 0, y: 0), duration: 0.55)
+        }
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }
 
@@ -190,7 +217,9 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource, GDList
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CELL_ID, for: indexPath) as! GDListCell
 //        cell.textLabel?.text = self.listData[indexPath.row].title
+
         cell.delegate = self
+        cell.textField.delegate = self
 
         var itemsForSection: [ToDo] = []
 
