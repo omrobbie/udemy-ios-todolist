@@ -12,3 +12,5 @@ Learn Swift, Xcode, and the iOS SDK from a unique perspective by developing a mo
 * Developers interested in learning how to use UITableViews, UILayoutConstraints programmatically!, UITextFields, and much more!
 
 <img src="https://github.com/omrobbie/udemy-ios-todolist/blob/master/screenshot/preview1.png" width=256/>
+<img src="https://github.com/omrobbie/udemy-ios-todolist/blob/master/screenshot/preview2.png" width=256/>
+<img src="https://github.com/omrobbie/udemy-ios-todolist/blob/master/screenshot/preview3.png" width=256/>
