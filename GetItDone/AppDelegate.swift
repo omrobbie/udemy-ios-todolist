@@ -22,7 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("Font family \(family), names \(names)")
         }
 
-        let vc = WelcomeController()
+        let hasVisited = UserDefaults.standard.bool(forKey: "welcome-controller-visited")
+        let vc = hasVisited ? ListViewController() : WelcomeController()
 
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = vc

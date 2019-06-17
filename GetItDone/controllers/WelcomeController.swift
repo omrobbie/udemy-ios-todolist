@@ -66,6 +66,8 @@ class WelcomeController: UIViewController {
         copyright.heightAnchor.constraint(equalToConstant: 40).isActive = true
         copyright.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         copyright.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20).isActive = true
+
+        UserDefaults.standard.set(true, forKey: "welcome-controller-visited")
     }
 
     @objc func handleNext() {
