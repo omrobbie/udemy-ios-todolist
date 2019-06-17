@@ -233,19 +233,19 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource, GDList
         return 42
     }
 
-    func toggleToDo(toDo updatedToDo: ToDo) {
-        let newListData = self.listData.map { (oldToDo) -> ToDo in
-            if oldToDo.id == updatedToDo.id {
-                var newToDo = oldToDo
-                newToDo.status = updatedToDo.status
-                newToDo.title = updatedToDo.title
+    func toggleToDo() {
+//        let newListData = self.listData.map { (oldToDo) -> ToDo in
+//            if oldToDo.id == updatedToDo.id {
+//                var newToDo = oldToDo
+//                newToDo.status = updatedToDo.status
+//                newToDo.title = updatedToDo.title
+//
+//                return newToDo
+//            }
+//            return oldToDo
+//        }
 
-                return newToDo
-            }
-            return oldToDo
-        }
-
-        listData = newListData
+        listData = CoreDataManager.shared.fetchToDos()
         listTable.reloadData()
         updateHeaderItemsLeft()
     }
