@@ -26,6 +26,7 @@
 		FCD524D72274D9B80004E406 /* GDTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD524D62274D9B80004E406 /* GDTableView.swift */; };
 		FCD524D922750FE50004E406 /* GDListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD524D822750FE50004E406 /* GDListCell.swift */; };
 		FCD524DC2275118E0004E406 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD524DB2275118E0004E406 /* ToDo.swift */; };
+		FCD665C922B4C90C008F864D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD665C822B4C90C008F864D /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		FCD524D62274D9B80004E406 /* GDTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDTableView.swift; sourceTree = "<group>"; };
 		FCD524D822750FE50004E406 /* GDListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDListCell.swift; sourceTree = "<group>"; };
 		FCD524DB2275118E0004E406 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		FCD665C822B4C90C008F864D /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				FC55FB6B225E8ACE00D0297D /* LaunchScreen.storyboard */,
 				FC55FB6E225E8ACE00D0297D /* Info.plist */,
 				FC55FB66225E8ACD00D0297D /* GetItDone.xcdatamodeld */,
+				FCD665C822B4C90C008F864D /* CoreDataManager.swift */,
 			);
 			path = GetItDone;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				FCB35C6322AE3B5500A59720 /* GDCheckBox.swift in Sources */,
 				FC55FB62225E8ACD00D0297D /* WelcomeController.swift in Sources */,
 				FC55FB68225E8ACD00D0297D /* GetItDone.xcdatamodeld in Sources */,
+				FCD665C922B4C90C008F864D /* CoreDataManager.swift in Sources */,
 				FC55FB7B225EACCC00D0297D /* GDLabel.swift in Sources */,
 				FC55FB78225EA3BE00D0297D /* extension.swift in Sources */,
 				FC0A10A2226A666000444160 /* GDTextField.swift in Sources */,
