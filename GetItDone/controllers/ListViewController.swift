@@ -70,13 +70,7 @@ class ListViewController: UIViewController, GDHeaderViewDelegate, GDNewItemPopup
         popup.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20).isActive = true
         popup.heightAnchor.constraint(equalToConstant: 80).isActive = true
 
-        listData = [
-            ToDo(id: 0, title: "One", status: false),
-            ToDo(id: 1, title: "Two", status: false),
-            ToDo(id: 2, title: "Three", status: true),
-            ToDo(id: 3, title: "Four", status: false),
-            ToDo(id: 4, title: "Five", status: false)
-        ]
+        listData = CoreDataManager.shared.fetchToDos()
 
         updateHeaderItemsLeft()
         openAddItemPopup()
@@ -102,9 +96,9 @@ class ListViewController: UIViewController, GDHeaderViewDelegate, GDNewItemPopup
 
     func addItemToList(text: String) {
         if notInList(text: text) {
-            let newItem = ToDo(id: listData.count, title: text, status: false)
+//            let newItem = ToDo(id: listData.count, title: text, status: false)
 
-            listData.append(newItem)
+//            listData.append(newItem)
             listTable.reloadData()
             updateHeaderItemsLeft()
             popup.textField.text = ""

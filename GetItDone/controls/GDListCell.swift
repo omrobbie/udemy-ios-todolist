@@ -32,7 +32,7 @@ class GDListCell: UITableViewCell {
 //                print(toDo.status)
 
                 box.toggled = toDo.status
-                box.id = toDo.id
+//                box.id = toDo.id
                 textField.text = toDo.title
             }
         }
@@ -78,8 +78,8 @@ class GDListCell: UITableViewCell {
 //        }
 
         if let delegate = self.delegate, let toDo = self.toDo {
-            let newTodo = ToDo(id: toDo.id, title: textField.text!, status: !toDo.status)
-            delegate.toggleToDo(toDo: newTodo)
+//            let newTodo = ToDo(id: toDo.id, title: textField.text!, status: !toDo.status)
+//            delegate.toggleToDo(toDo: newTodo)
         }
     }
 }

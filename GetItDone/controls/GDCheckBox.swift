@@ -10,7 +10,7 @@ import UIKit
 
 class GDCheckBox: UIButton {
 
-    var id: Int?
+//    var id: Int?
 
     var toggled: Bool? {
         didSet {
