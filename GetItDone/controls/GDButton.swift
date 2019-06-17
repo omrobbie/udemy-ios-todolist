@@ -55,10 +55,6 @@ class GDButton: UIButton {
     }
 
     func squareIcon() {
-//        if let titleLabel = self.titleLabel {
-//            titleLabel.font = UIFont.init(name: "Raleway-v4020-Regular", size: 24)
-//        }
-
         backgroundColor = .white
         setImage(UIImage(named: "add-icon"), for: .normal)
     }

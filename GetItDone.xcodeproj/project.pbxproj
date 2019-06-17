@@ -25,7 +25,6 @@
 		FCB35C6322AE3B5500A59720 /* GDCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB35C6222AE3B5500A59720 /* GDCheckBox.swift */; };
 		FCD524D72274D9B80004E406 /* GDTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD524D62274D9B80004E406 /* GDTableView.swift */; };
 		FCD524D922750FE50004E406 /* GDListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD524D822750FE50004E406 /* GDListCell.swift */; };
-		FCD524DC2275118E0004E406 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD524DB2275118E0004E406 /* ToDo.swift */; };
 		FCD665C922B4C90C008F864D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD665C822B4C90C008F864D /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,7 +51,6 @@
 		FCB35C6222AE3B5500A59720 /* GDCheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDCheckBox.swift; sourceTree = "<group>"; };
 		FCD524D62274D9B80004E406 /* GDTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDTableView.swift; sourceTree = "<group>"; };
 		FCD524D822750FE50004E406 /* GDListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDListCell.swift; sourceTree = "<group>"; };
-		FCD524DB2275118E0004E406 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		FCD665C822B4C90C008F864D /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,7 +103,6 @@
 				FC55FB6B225E8ACE00D0297D /* LaunchScreen.storyboard */,
 				FC55FB6E225E8ACE00D0297D /* Info.plist */,
 				FC55FB66225E8ACD00D0297D /* GetItDone.xcdatamodeld */,
-				FCD665C822B4C90C008F864D /* CoreDataManager.swift */,
 			);
 			path = GetItDone;
 			sourceTree = "<group>";
@@ -148,7 +145,7 @@
 		FCD524DA2275116E0004E406 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				FCD524DB2275118E0004E406 /* ToDo.swift */,
+				FCD665C822B4C90C008F864D /* CoreDataManager.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -236,7 +233,6 @@
 				FC42503A226A3B9D00A4A502 /* GDNewItemPopup.swift in Sources */,
 				FCD524D72274D9B80004E406 /* GDTableView.swift in Sources */,
 				FC4250302268E07700A4A502 /* GDHeaderView.swift in Sources */,
-				FCD524DC2275118E0004E406 /* ToDo.swift in Sources */,
 				FC4250342269359600A4A502 /* optionset.swift in Sources */,
 				FC42503822693EE800A4A502 /* protocol.swift in Sources */,
 				FC42502E2268D5AC00A4A502 /* ListViewController.swift in Sources */,

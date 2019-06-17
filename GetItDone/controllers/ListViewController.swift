@@ -98,9 +98,6 @@ class ListViewController: UIViewController, GDHeaderViewDelegate, GDNewItemPopup
 
     func addItemToList(text: String) {
         if notInList(text: text) {
-//            let newItem = ToDo(id: listData.count, title: text, status: false)
-
-//            listData.append(newItem)
             listTable.reloadData()
             updateHeaderItemsLeft()
             popup.textField.text = ""
@@ -219,7 +216,6 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource, GDList
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CELL_ID, for: indexPath) as! GDListCell
-//        cell.textLabel?.text = self.listData[indexPath.row].title
 
         cell.delegate = self
         cell.textField.delegate = self
@@ -243,17 +239,6 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource, GDList
     }
 
     func toggleToDo() {
-//        let newListData = self.listData.map { (oldToDo) -> ToDo in
-//            if oldToDo.id == updatedToDo.id {
-//                var newToDo = oldToDo
-//                newToDo.status = updatedToDo.status
-//                newToDo.title = updatedToDo.title
-//
-//                return newToDo
-//            }
-//            return oldToDo
-//        }
-
         listData = CoreDataManager.shared.fetchToDos()
         listTable.reloadData()
         updateHeaderItemsLeft()
