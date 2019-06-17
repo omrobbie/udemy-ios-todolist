@@ -38,6 +38,27 @@ struct CoreDataManager {
         }
     }
 
+    func fetchToDo(title: String) -> ToDo? {
+        let context = persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<ToDo>(entityName: "ToDo")
+
+        var toDo: ToDo?
+
+        do {
+            let toDos = try context.fetch(fetchRequest)
+
+            toDos.forEach { (fetchToDo) in
+                if fetchToDo.title == title {
+                    toDo = fetchToDo
+                }
+            }
+        } catch let error {
+            print("Failed to fetch request from context: ", error)
+        }
+
+        return toDo
+    }
+
     func fetchToDos() -> [ToDo] {
         let context = persistentContainer.viewContext
         let fetchRequest = NSFetchRequest<ToDo>(entityName: "ToDo")
@@ -46,8 +67,25 @@ struct CoreDataManager {
             let toDos = try context.fetch(fetchRequest)
             return toDos
         } catch let error {
-            print("Failed to fetch request: ", error)
+            print("Failed to fetch request from context: ", error)
             return []
+        }
+    }
+
+    func deleteToDo(id: Double) {
+        let context = persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<ToDo>(entityName: "ToDo")
+
+        do {
+            let toDos = try context.fetch(fetchRequest)
+
+            toDos.forEach { (fetchToDo) in
+                if fetchToDo.id == id {
+                    context.delete(fetchToDo)
+                }
+            }
+        } catch let error {
+            print("Failed to delete toDos from context: ", error)
         }
     }
 }

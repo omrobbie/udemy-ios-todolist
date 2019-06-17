@@ -32,6 +32,8 @@ class ListViewController: UIViewController, GDHeaderViewDelegate, GDNewItemPopup
 
     var bgBottom: NSLayoutConstraint!
 
+    var toDoToUpdate: ToDo?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -137,6 +139,8 @@ extension ListViewController: UITextFieldDelegate {
         if textField == popup.textField {
             popup.animateView(transform: CGAffineTransform(translationX: 0, y: -self.keyboardHeight), duration: 0.7)
             heightToAnimate -= 80
+        } else {
+            toDoToUpdate = CoreDataManager.shared.fetchToDo(title: textField.text!)
         }
 
         bgBottom.constant = heightToAnimate
@@ -155,6 +159,11 @@ extension ListViewController: UITextFieldDelegate {
 
         if textField == popup.textField {
             popup.animateView(transform: CGAffineTransform(translationX: 0, y: 0), duration: 0.55)
+        } else {
+            if let toDoToUpdate = toDoToUpdate {
+                CoreDataManager.shared.deleteToDo(id: toDoToUpdate.id)
+                CoreDataManager.shared.createToDo(id: toDoToUpdate.id, title: toDoToUpdate.title!, status: toDoToUpdate.status)
+            }
         }
     }
 
