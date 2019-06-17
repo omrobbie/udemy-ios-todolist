@@ -98,6 +98,8 @@ class ListViewController: UIViewController, GDHeaderViewDelegate, GDNewItemPopup
 
     func addItemToList(text: String) {
         if notInList(text: text) {
+            CoreDataManager.shared.createToDo(id: Double(listData.count), title: text, status: false)
+            listData = CoreDataManager.shared.fetchToDos()
             listTable.reloadData()
             updateHeaderItemsLeft()
             popup.textField.text = ""
